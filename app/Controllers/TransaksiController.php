@@ -79,6 +79,7 @@ class TransaksiController extends BaseController
 
     return view('v_checkout', $data);
 }
+
 public function getLocation()
 {
 		//keyword pencarian yang dikirimkan dari halaman checkout

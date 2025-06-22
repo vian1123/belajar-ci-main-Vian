@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 
-class ProfileController extends BaseController
+class ProfilController extends BaseController
 {
     public function index()
     {
@@ -12,7 +12,7 @@ class ProfileController extends BaseController
             return redirect()->to('/login');
         }
 
-        return view('profile', [
+        return view('profil', [
             'username'   => session()->get('username'),
             'email'      => session()->get('email'),
             'role'       => session()->get('role'),

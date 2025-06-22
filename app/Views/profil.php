@@ -1,6 +1,6 @@
 <?= $this->extend('layout') ?>
 <?= $this->section('content') ?>
-<h1>Profile Pengguna</h1>
+<h1>Profil Pengguna</h1>
 
 <div class="user-list">
         <div class="user-card">

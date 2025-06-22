@@ -28,13 +28,20 @@
         <?php
         }
         ?>
+
+        <li class="nav-item">
+    <a class="nav-link <?php echo (uri_string() == 'profile') ? "" : "collapsed" ?>" href="profile">
+        <i class="bi bi-person"></i>
+        <span>Profile</span>
+    </a>
+    </li><!-- End Profile Nav -->
          <?php
         if (session()->get('role') == 'admin') {
         ?>
             <li class="nav-item">
-                <a class="nav-link <?php echo (uri_string() == 'profile') ? "" : "collapsed" ?>" href="profile">
+                <a class="nav-link <?php echo (uri_string() == 'profil') ? "" : "collapsed" ?>" href="profil">
                     <i class="bi bi-receipt"></i>
-                    <span>Profile</span>
+                    <span>Profil</span>
                 </a>
             </li><!-- End Produk Nav -->
         <?php
